@@ -1,0 +1,39 @@
+.header-bg {
+  background: linear-gradient(90deg, #00ada1 , #59d999);
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #453c5c;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.menu {
+  display: flex;
+  gap: 60px;
+}
+.menu a {
+  font-size: 1.25rem;
+  color: white;
+  padding: 10px;
+}
+.menu a:hover {
+  color: #453c5c;
+}
+
+@media (max-width: 650px) {
+  .header {
+    flex-direction: column;
+  }
+  .menu {
+    padding-bottom: 10px;
+    gap: 20px;
+  }
+}
